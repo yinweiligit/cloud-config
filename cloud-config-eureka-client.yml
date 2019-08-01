@@ -1,0 +1,34 @@
+server:
+  port: 7001
+  
+spring:
+  profiles: dev
+  application:
+    name: cloud-config-eureka-client
+
+eureka:
+  instance:
+    hostname: eureka7001.com 
+  client:
+    register-with-eureka: false  #false表示不向注册中心注册自己（就比如没有物业公司收自己物业费的）我不是入住的微服务
+    fetch-registry: false  #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务（我是物业公司，并不需要在花名册上找到我自己，花名册只记录入住本楼层的企业）
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+      
+----
+server:
+  port: 7001
+  
+spring:
+  profiles: test
+  application:
+    name: cloud-config-eureka-client
+    
+eureka:
+  instance:
+    hostname: eureka7001.com 
+  client:
+    register-with-eureka: false  #false表示不向注册中心注册自己（就比如没有物业公司收自己物业费的）我不是入住的微服务
+    fetch-registry: false  #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务（我是物业公司，并不需要在花名册上找到我自己，花名册只记录入住本楼层的企业）
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
