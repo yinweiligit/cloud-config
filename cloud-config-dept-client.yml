@@ -23,7 +23,7 @@ spring:
    username: root
    password: root
    driver-class-name: com.mysql.jdbc.Driver
-   url: jdbc:mysql://192.168.31.147:3308/clouddb01?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+   url: jdbc:mysql://192.168.31.148:3308/clouddb01?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
    type: com.alibaba.druid.pool.DruidDataSource
    dbcp2:
      min-idle: 5               #数据库连接池的最小维持连接数
@@ -68,7 +68,7 @@ spring:
    username: root
    password: root
    driver-class-name: com.mysql.jdbc.Driver
-   url: jdbc:mysql://192.168.31.147:3308/clouddb01?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+   url: jdbc:mysql://192.168.31.148:3308/clouddb02?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
    type: com.alibaba.druid.pool.DruidDataSource
    dbcp2:
      min-idle: 5               #数据库连接池的最小维持连接数
